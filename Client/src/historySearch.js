@@ -109,37 +109,3 @@ export default SearchHistory;
 
 
 
-// import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
-
-// const SearchHistory = () => {
-//   const [searches, setSearches] = useState([]);
-
-//   useEffect(() => {
-//     const fetchSearchHistory = async () => {
-//       try {
-//         const response = await axios.get('http://localhost:5000/searches');
-//         setSearches(response.data);
-//       } catch (error) {
-//         console.error("Error fetching search history", error);
-//       }
-//     };
-
-//     fetchSearchHistory();
-//   }, []);
-
-//   return (
-//     <div>
-//       <h3>Recent Searches</h3>
-//       <ul>
-//         {searches.map((search) => (
-//           <li key={search.id}>
-//             {search.city_name} - {search.country} - {new Date(search.last_updated).toLocaleString()}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default SearchHistory;
